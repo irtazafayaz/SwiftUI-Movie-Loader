@@ -19,7 +19,7 @@ class Utils {
     
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyy-mm-dd"
+        dateFormatter.dateFormat = "yyyy-mm-dd"
         return dateFormatter
     }()
 }

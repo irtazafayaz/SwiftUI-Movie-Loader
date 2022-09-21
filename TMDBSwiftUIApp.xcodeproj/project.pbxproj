@@ -16,9 +16,9 @@
 		19EF15A626809554008456C1 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF15A526809554008456C1 /* MovieStore.swift */; };
 		19EF15A926809579008456C1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF15A826809579008456C1 /* Utils.swift */; };
 		19EF163E26831535008456C1 /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF163D26831535008456C1 /* Movie+Stub.swift */; };
-		19EF16442683157B008456C1 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EF16412683157B008456C1 /* movie_list.json */; };
-		19EF16452683157B008456C1 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EF16422683157B008456C1 /* search_movie.json */; };
-		19EF16462683157B008456C1 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EF16432683157B008456C1 /* movie_info.json */; };
+		D58C9D0528DBA64200009D56 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = D58C9D0228DBA64200009D56 /* search_movie.json */; };
+		D58C9D0628DBA64200009D56 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = D58C9D0328DBA64200009D56 /* movie_list.json */; };
+		D58C9D0728DBA64200009D56 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = D58C9D0428DBA64200009D56 /* movie_info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		19EF15A526809554008456C1 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		19EF15A826809579008456C1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		19EF163D26831535008456C1 /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
-		19EF16412683157B008456C1 /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movie_list.json; path = "../../../../../../Downloads/SwiftUITMDbV2-master/SwiftUIMovieDb/Resources/movie_list.json"; sourceTree = "<group>"; };
-		19EF16422683157B008456C1 /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = search_movie.json; path = "../../../../../../Downloads/SwiftUITMDbV2-master/SwiftUIMovieDb/Resources/search_movie.json"; sourceTree = "<group>"; };
-		19EF16432683157B008456C1 /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movie_info.json; path = "../../../../../../Downloads/SwiftUITMDbV2-master/SwiftUIMovieDb/Resources/movie_info.json"; sourceTree = "<group>"; };
+		D58C9D0228DBA64200009D56 /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		D58C9D0328DBA64200009D56 /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		D58C9D0428DBA64200009D56 /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +110,9 @@
 		19EF164026831566008456C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				19EF16432683157B008456C1 /* movie_info.json */,
-				19EF16412683157B008456C1 /* movie_list.json */,
-				19EF16422683157B008456C1 /* search_movie.json */,
+				D58C9D0428DBA64200009D56 /* movie_info.json */,
+				D58C9D0328DBA64200009D56 /* movie_list.json */,
+				D58C9D0228DBA64200009D56 /* search_movie.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -174,10 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58C9D0628DBA64200009D56 /* movie_list.json in Resources */,
+				D58C9D0528DBA64200009D56 /* search_movie.json in Resources */,
+				D58C9D0728DBA64200009D56 /* movie_info.json in Resources */,
 				19EF159326808F04008456C1 /* Preview Assets.xcassets in Resources */,
-				19EF16462683157B008456C1 /* movie_info.json in Resources */,
-				19EF16442683157B008456C1 /* movie_list.json in Resources */,
-				19EF16452683157B008456C1 /* search_movie.json in Resources */,
 				19EF159026808F04008456C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

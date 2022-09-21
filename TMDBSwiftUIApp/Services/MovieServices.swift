@@ -15,8 +15,10 @@ protocol MovieServices {
 
 }
 
-enum MovieListEndPoint: String, CaseIterable {
-
+enum MovieListEndPoint: String, CaseIterable, Identifiable {
+    
+    var id: String { rawValue }
+    
     case nowPlaying = "now_playing"
     case upcoming
     case topRated = "top_rated"
@@ -24,13 +26,12 @@ enum MovieListEndPoint: String, CaseIterable {
     
     var description: String {
         switch self {
-        case .nowPlaying: return "Now Playing"
-        case .popular: return "Popular"
-        case .topRated: return "Top Rated"
-        case .upcoming: return "Upcoming"
+            case .nowPlaying: return "Now Playing"
+            case .upcoming: return "Upcoming"
+            case .topRated: return "Top Rated"
+            case .popular: return "Popular"
         }
     }
-    
 }
 
 

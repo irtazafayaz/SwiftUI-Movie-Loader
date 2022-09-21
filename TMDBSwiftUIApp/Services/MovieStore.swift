@@ -30,7 +30,8 @@ class MovieStore: MovieServices {
     }
     
     func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ()) {
-        guard let url = URL(string: "\(baseAPIUrl)/movie/\(id)") else {
+        print(id)
+        guard let url = URL(string: "\(baseAPIUrl)/movie/550") else {
             completion(.failure(.invalidEndPoint))
             return
         }
@@ -40,7 +41,7 @@ class MovieStore: MovieServices {
     }
     
     func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
-        guard let url = URL(string: "\(baseAPIUrl)/movie/\(movieEndPoint.rawValue)") else {
+        guard let url = URL(string: "\(baseAPIUrl)/search/movie") else {
             completion(.failure(.invalidEndPoint))
             return
         }
@@ -94,7 +95,8 @@ class MovieStore: MovieServices {
                 let decodedResponse = try self.jsonDecoder.decode(D.self, from: data)
                 self.executeCompletionHandlerInMainThread(with: .success(decodedResponse), completion: completion)
                 
-            } catch {
+            } catch let error {
+                print(error)
                 self.executeCompletionHandlerInMainThread(with: .failure(.serializationError), completion: completion)
             }
  
