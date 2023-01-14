@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("ff")
-        //MovieDetailView(movieId: 550)
+        MovieDetailView(movieId: 550)
     }
 }
 
