@@ -20,7 +20,7 @@ struct MovieDetailView: View {
                 self.movieDetailState.loadMovie(id: self.movieId)
             }
             if movieDetailState.movie != nil {
-                MovieDetailListView(movie: self.movieDetailState.movie!)
+                    MovieDetailListView(movie: self.movieDetailState.movie!)
             }
         }
         .navigationBarTitle(movieDetailState.movie?.title ?? "Error")
@@ -40,8 +40,21 @@ struct MovieDetailListView: View {
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             HStack {
                 Text(movie.genreText)
+                Text("·")
+                Text(movie.yearText)
+                Text(movie.durationText)
             }
+            Text(movie.overview)
+            HStack {
+                if !movie.ratingText.isEmpty {
+                    Text(movie.ratingText).foregroundColor(.white)
+                }
+                Text(movie.scoreText)
+            }
+            
+            Divider()
         }
+        .listStyle(SidebarListStyle())
     }
     
 }
